@@ -3,6 +3,7 @@ import SortableComponent from './components/SortableComponent'
 
 import logo from './logo.svg'
 import './App.css'
+import Generator from './pages/Generator'
 
 function App() {
   return (
@@ -11,28 +12,7 @@ function App() {
         <h1>jsPDF Generator</h1>
       </header>
       <main className="App-main">
-        <div className="App-main-code">
-          <div className="App-main-code-options">
-            <ul>
-              <li>
-                <button>Title</button>
-              </li>
-              <li>
-                <button>Text</button>
-              </li>
-              <li>
-                <button>Image</button>
-              </li>
-              <li>
-                <button>Table</button>
-              </li>
-            </ul>
-          </div>
-          <div className="App-main-code-items">
-            <SortableComponent />
-          </div>
-        </div>
-        <div className="App-main-preview">Eu sou o preview</div>
+        <Generator />
       </main>
     </div>
   )
