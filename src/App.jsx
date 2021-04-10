@@ -1,7 +1,4 @@
 import React from 'react'
-import SortableComponent from './components/SortableComponent'
-
-import logo from './logo.svg'
 import './App.css'
 import Generator from './pages/Generator'
 

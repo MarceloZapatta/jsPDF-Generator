@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.5.1",
+    "@testing-library/dom": "^7.30.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -12,17 +13,21 @@
     "@types/react-dom": "^17.0.3",
     "@types/react-redux": "^7.1.16",
     "array-move": "^3.0.1",
+    "eslint-plugin-import": "^2.22.1",
+    "prop-types": "^15.5.7",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-redux": "^7.2.3",
-    "react-scripts": "3.4.4",
-    "react-sortable-hoc": "^1.11.0",
-    "typescript": "^4.2.3"
+    "react-scripts": "^4.0.3",
+    "react-sortable-hoc": "^2.0.0",
+    "redux": "^4.0.5",
+    "typescript": "^4.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "lint": "eslint src --fix",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -42,17 +47,18 @@
   },
   "devDependencies": {
     "@types/react": "^17.0.3",
-    "@typescript-eslint/eslint-plugin": "^4.21.0",
-    "@typescript-eslint/parser": "^4.21.0",
-    "eslint": "^6.6.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-jest": "^24.3.4",
     "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.23.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^6.0.0",
-    "lint-staged": ">=10",
-    "prettier": "2.1.2"
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1"
   },
   "husky": {
     "hooks": {

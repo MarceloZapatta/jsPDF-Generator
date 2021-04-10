@@ -1,28 +1,29 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit';
 
 interface PdfState {
-  items: Array<any>
+  items: Array<any>;
 }
 
 // Define the initial state using that type
 const initialState: PdfState = {
   items: [],
-}
+};
 
 export const pdfSlice = createSlice({
   name: 'pdf',
   initialState,
   reducers: {
     setItems: (state, action) => {
-      state.items = action.payload
+      const stateCurrent = state;
+      stateCurrent.items = action.payload;
     },
     addItem: (state, action) => {
-      state.items.push(action.payload)
+      state.items.push(action.payload);
     },
   },
-})
+});
 
 // Action creators are generated for each case reducer function
-export const { addItem, setItems } = pdfSlice.actions
+export const { addItem, setItems } = pdfSlice.actions;
 
-export default pdfSlice.reducer
+export default pdfSlice.reducer;
