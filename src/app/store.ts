@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import pdfReducer from '../features/pdf/pdfSlice.ts';
+import pdfReducer from '../features/pdf/pdfSlice';
 
 const store = configureStore({
   reducer: {

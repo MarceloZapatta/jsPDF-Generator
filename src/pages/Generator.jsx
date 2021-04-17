@@ -1,15 +1,15 @@
-import React from 'react'
-import { useAppDispatch } from '../app/hooks.ts'
-import SortableComponent from '../components/SortableComponent'
-import Title from '../components/Title'
-import { addItem } from '../features/pdf/pdfSlice.ts'
+import React from 'react';
+import { useAppDispatch } from '../app/hooks';
+import SortableComponent from '../components/SortableComponent';
+import Title from '../components/Title';
+import { addItem } from '../features/pdf/pdfSlice';
 
-function Generator() {
-  const dispatch = useAppDispatch()
+function Generator(): JSX.Element {
+  const dispatch = useAppDispatch();
 
   const handleClickTitle = () => {
-    dispatch(addItem(<Title title="Example title" />))
-  }
+    dispatch(addItem(<Title title="Example title" />));
+  };
 
   return (
     <div className="App-main-code">
@@ -35,7 +35,7 @@ function Generator() {
         <SortableComponent />
       </div>
     </div>
-  )
+  );
 }
 
-export default Generator
+export default Generator;
