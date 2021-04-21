@@ -6,5 +6,5 @@ interface TextProps {
 
 export default function Text(props: TextProps): JSX.Element {
   const { text } = props;
-  return <h1>{text}</h1>;
+  return <p>{text}</p>;
 }
